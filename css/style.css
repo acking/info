@@ -1,0 +1,51 @@
+.tag {
+  margin-top: 8px;
+  margin-left: 0;
+  list-style: none;
+  *zoom: 1;
+}
+
+.tag:before,
+.tag:after {
+  display: table;
+  content: "";
+}
+
+.tag:after {
+  clear: both;
+}
+
+.tag li {
+  display: inline;
+}
+
+.tag a {
+  display: inline-block;
+  padding: 5px 14px;
+  margin:4px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.tag a:hover {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+.tag .next a {
+  float: right;
+}
+
+.tag .previous a {
+  float: left;
+}
+
+.tag .disabled a,
+.tag .disabled a:hover {
+  color: #999999;
+  cursor: default;
+  background-color: #fff;
+}
